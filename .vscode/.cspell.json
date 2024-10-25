@@ -1,0 +1,13 @@
+{
+  "version": "0.2",
+  "enabled": true,
+  "language": "en",
+  "words": [
+    "Copilot",
+    "GitHub",
+    "JSON",
+    "somnio",
+    "VSCode"
+  ],
+  "ignorePaths": []
+}
