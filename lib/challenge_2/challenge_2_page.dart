@@ -56,6 +56,7 @@ class _TodoListState extends State<TodoList> {
         final todo = todos[index];
         final isChecked = todoChecked[index];
         return Card(
+          key: UniqueKey(),
           child: ListTile(
             title: Text(todo),
             leading: Checkbox(

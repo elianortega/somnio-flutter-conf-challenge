@@ -30,6 +30,9 @@ final router = GoRouter(
     TypedGoRoute<Challenge4Route>(
       path: 'challenge-4',
     ),
+    TypedGoRoute<Challenge5Route>(
+      path: 'challenge-5',
+    ),
     TypedGoRoute<Challenge6Route>(
       path: 'challenge-6',
     ),

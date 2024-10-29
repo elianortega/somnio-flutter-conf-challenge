@@ -31,6 +31,10 @@ RouteBase get $homeScreenRoute => GoRouteData.$route(
           factory: $Challenge4RouteExtension._fromState,
         ),
         GoRouteData.$route(
+          path: 'challenge-5',
+          factory: $Challenge5RouteExtension._fromState,
+        ),
+        GoRouteData.$route(
           path: 'challenge-6',
           factory: $Challenge6RouteExtension._fromState,
         ),
@@ -110,6 +114,23 @@ extension $Challenge4RouteExtension on Challenge4Route {
 
   String get location => GoRouteData.$location(
         '/challenge-4',
+      );
+
+  void go(BuildContext context) => context.go(location);
+
+  Future<T?> push<T>(BuildContext context) => context.push<T>(location);
+
+  void pushReplacement(BuildContext context) =>
+      context.pushReplacement(location);
+
+  void replace(BuildContext context) => context.replace(location);
+}
+
+extension $Challenge5RouteExtension on Challenge5Route {
+  static Challenge5Route _fromState(GoRouterState state) => Challenge5Route();
+
+  String get location => GoRouteData.$location(
+        '/challenge-5',
       );
 
   void go(BuildContext context) => context.go(location);

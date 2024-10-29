@@ -25,9 +25,11 @@ class TextOverflowRow extends StatelessWidget {
         children: [
           Icon(Icons.warning),
           SizedBox(width: 16),
-          Text(
-            'This is a very long text that does not fit in a single line and '
-            'will cause an overflow if not handled properly.',
+          Expanded(
+            child: Text(
+              'This is a very long text that does not fit in a single line and '
+              'will cause an overflow if not handled properly.',
+            ),
           ),
         ],
       ),
