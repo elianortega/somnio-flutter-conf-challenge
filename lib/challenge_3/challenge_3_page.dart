@@ -23,7 +23,7 @@ class StreamExample extends StatefulWidget {
 }
 
 class _StreamExampleState extends State<StreamExample> {
-  final StreamController<int> _controller = StreamController<int>.broadcast();
+  final StreamController<int> _controller = StreamController<int>();
   late final Timer timer;
 
   @override

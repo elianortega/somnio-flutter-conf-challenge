@@ -1,6 +1,5 @@
 import 'dart:convert';
 
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -33,7 +32,7 @@ class _LargeDataProcessorState extends State<LargeDataProcessor> {
     });
 
     final largeJson = await rootBundle.loadString('assets/large-file.json');
-    final data = await compute(_parseJson, largeJson);
+    final data = _parseJson(largeJson);
 
     setState(() {
       result = data;

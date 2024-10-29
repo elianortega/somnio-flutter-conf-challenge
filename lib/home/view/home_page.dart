@@ -41,7 +41,7 @@ class HomePage extends StatelessWidget {
             child: ListTile(
               title: const Text('Challenge 4'),
               onTap: () {
-                Challenge4Route().go(context);
+                // Go to to Challenge 4
               },
             ),
           ),

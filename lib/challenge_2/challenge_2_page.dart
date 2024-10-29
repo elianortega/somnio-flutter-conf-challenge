@@ -38,13 +38,13 @@ class _TodoListState extends State<TodoList> {
   List<bool> todoChecked = [
     false,
     false,
+    true,
     false,
+    true,
     false,
+    true,
     false,
-    false,
-    false,
-    false,
-    false,
+    true,
     false,
   ];
 
@@ -57,7 +57,6 @@ class _TodoListState extends State<TodoList> {
         final isChecked = todoChecked[index];
         return Card(
           child: ListTile(
-            key: Key(todo),
             title: Text(todo),
             leading: Checkbox(
               value: isChecked,
