@@ -41,7 +41,7 @@ class HomePage extends StatelessWidget {
             child: ListTile(
               title: const Text('Challenge 4'),
               onTap: () {
-                // Go to to Challenge 4
+                Challenge4Route().go(context);
               },
             ),
           ),
@@ -50,6 +50,14 @@ class HomePage extends StatelessWidget {
               title: const Text('Challenge 5'),
               onTap: () {
                 Challenge5Route().go(context);
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: const Text('Challenge 6'),
+              onTap: () {
+                Challenge6Route().go(context);
               },
             ),
           ),
