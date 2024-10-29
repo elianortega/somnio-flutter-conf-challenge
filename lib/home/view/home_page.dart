@@ -29,6 +29,30 @@ class HomePage extends StatelessWidget {
               },
             ),
           ),
+          Card(
+            child: ListTile(
+              title: const Text('Challenge 3'),
+              onTap: () {
+                Challenge3Route().go(context);
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: const Text('Challenge 4'),
+              onTap: () {
+                Challenge4Route().go(context);
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: const Text('Challenge 5'),
+              onTap: () {
+                Challenge5Route().go(context);
+              },
+            ),
+          ),
         ],
       ),
     );
