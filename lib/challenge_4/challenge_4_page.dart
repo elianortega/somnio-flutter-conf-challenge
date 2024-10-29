@@ -41,18 +41,25 @@ class Counter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final count = context.watch<CounterBloc>().state.count;
-    return Column(
-      children: [
-        Text('Counter value: $count'),
-        IconButton(
-          onPressed: () {
-            context.read<CounterBloc>().add(
-                  const CounterIncremented(),
-                );
-          },
-          icon: const Icon(Icons.add),
-        )
-      ],
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            'Counter value: $count',
+            style: Theme.of(context).textTheme.titleLarge,
+          ),
+          const SizedBox(height: 24),
+          ElevatedButton(
+            onPressed: () {
+              context.read<CounterBloc>().add(
+                    const CounterIncremented(),
+                  );
+            },
+            child: const Icon(Icons.add),
+          ),
+        ],
+      ),
     );
   }
 }
